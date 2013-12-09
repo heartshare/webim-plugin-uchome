@@ -48,7 +48,7 @@ echo webim_menu( 'index' );
 				<div class="box">
 				<h3>更新基本配置</h3>
 				<div class="box-c">
-				<p class="box-desc">apikey需要到<a href="http://www.webim20.cn" target="_blank">webim20.cn</a>注册</p>
+				<p class="box-desc">apikey需要到<a href="http://nextalk.im" target="_blank">nextalk.im</a>注册</p>
 					<form action="" method="post" class="form">
 						<p class="clearfix"><label for="host">服务器地址：</label><input class="text" type="text" id="host" value="<?php echo $_IMC['host']; ?>" name="host"/><span class="help">IM服务器地址，国内im.webim20.cn，国外im.webim.us，独立版用户使用自己的服务器地址</span></p>
 						<p class="clearfix"><label for="port">服务器端口：</label><input class="text" type="text" id="port" value="<?php echo $_IMC['port']; ?>" name="port"/></p>
@@ -60,9 +60,9 @@ echo webim_menu( 'index' );
 						<option value="en" <?php echo $_IMC['local'] == 'en' ? 'selected="selected"' : '' ?>>English</option>
 						</select>
 						</p>
-<?php echo webim_check_tag( "disable_room", $_IMC['disable_room'], "关闭群组聊天："); ?>
-<?php echo webim_check_tag( "disable_chatlink", $_IMC['disable_chatlink'], "关闭陌生人聊天："); ?>
-<?php echo webim_check_tag( "disable_menu", $_IMC['disable_menu'], "隐藏工具栏："); ?>
+<?php echo webim_check_tag( "enable_room", $_IMC['enable_room'], "关闭群组聊天："); ?>
+<?php echo webim_check_tag( "enable_chatlink", $_IMC['enable_chatlink'], "关闭陌生人聊天："); ?>
+<?php echo webim_check_tag( "enable_menu", $_IMC['enable_menu'], "隐藏工具栏："); ?>
 <?php echo webim_check_tag( "enable_shortcut", $_IMC['enable_shortcut'], "开启快捷工具栏："); ?>
 <?php echo webim_check_tag( "show_realname", $_IMC['show_realname'], "显示真实姓名："); ?>
 <?php echo webim_check_tag( "enable_login", $_IMC['enable_login'], "支持从IM登录："); ?>

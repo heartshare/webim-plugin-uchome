@@ -1,14 +1,14 @@
 WebIM For UChome
 ================================================================
 
-为uchome提供的在线及时聊天插件，更新内容请查看 CHANGELOG.md
+为UCHome开发的站内聊天插件(Webim)，更新内容请查看 CHANGELOG.md
 
 
 需求
 -----------------------------
 
 *	MySQL版本不低于4.1.2
-*	需要PHP版本不低于4.3
+*	需要PHP版本不低于5.1
 *	PHP访问外部网络，WebIM连接时需要访问WebIM服务器, 请确保您的php环境是否可连接外部网络, 设置php.ini中`allow_url_fopen=ON`.
 
 
@@ -21,7 +21,7 @@ WebIM For UChome
 安装
 -----------------------------
 
-首先将下载文件解压到UChome根目录
+1. 解压下载的安装包文件UChome根目录
 
 	.
 	|-- webim
@@ -32,10 +32,10 @@ WebIM For UChome
 
 	chmod 777 webim
 
-1.	浏览器打开webim安装页面。例： uchome地址(http://www.uc.com/home/) -> webim安装地址(http://www.uc.com/home/webim/)
+2. 访问http://UCHome访问URL/webim/admin/install.php
 
-2.	配置域名，apikey确认
+3. 根据安装向导，配置域名、APIKEY等参数
 
-3.	安装完成
+4. 安装完成
 
 
