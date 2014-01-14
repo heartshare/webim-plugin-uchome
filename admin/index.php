@@ -60,12 +60,12 @@ echo webim_menu( 'index' );
 						<option value="en" <?php echo $_IMC['local'] == 'en' ? 'selected="selected"' : '' ?>>English</option>
 						</select>
 						</p>
-<?php echo webim_check_tag( "enable_room", $_IMC['enable_room'], "关闭群组聊天："); ?>
-<?php echo webim_check_tag( "enable_chatlink", $_IMC['enable_chatlink'], "关闭陌生人聊天："); ?>
-<?php echo webim_check_tag( "enable_menu", $_IMC['enable_menu'], "隐藏工具栏："); ?>
+<?php echo webim_check_tag( "enable_room", $_IMC['enable_room'], "显示群组聊天："); ?>
+<?php echo webim_check_tag( "enable_chatlink", $_IMC['enable_chatlink'], "支持陌生人聊天："); ?>
+<?php echo webim_check_tag( "enable_menu", $_IMC['enable_menu'], "显示工具栏："); ?>
 <?php echo webim_check_tag( "enable_shortcut", $_IMC['enable_shortcut'], "开启快捷工具栏："); ?>
 <?php echo webim_check_tag( "show_realname", $_IMC['show_realname'], "显示真实姓名："); ?>
-<?php echo webim_check_tag( "enable_login", $_IMC['enable_login'], "支持从IM登录："); ?>
+<?php #echo webim_check_tag( "enable_login", $_IMC['enable_login'], "支持从IM登录："); ?>
 						<p class="actions clearfix"><input type="submit" class="submit" value="提交" /></p>
 					</form>
 				</div>

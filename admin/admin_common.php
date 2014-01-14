@@ -9,7 +9,7 @@ require_once( WEBIM_PATH . 'admin_interface.php' );
 
 $im_config_file = WEBIM_PATH . 'config.php';
 $im_config_sample_file = WEBIM_PATH . 'config_sample.php';
-$im_template = '<script type="text/javascript" src="webim/custom.js.php"></script>';
+$im_template = '<script type="text/javascript" src="webim/boot.js.php"></script>';
 
 ?>
 

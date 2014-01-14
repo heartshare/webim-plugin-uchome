@@ -12,11 +12,11 @@ if ( version_compare( PHP_VERSION, '4.3', '<' ) ) {
 
 // Modify error reporting levels to exclude PHP notices
 if( isset( $_IMC['debug'] ) ) {
-	error_reporting( -1 );
+	error_reporting( E_ALL );
 	if ( !defined( 'WEBIMDB_DEBUG' ) )
 		define( 'WEBIMDB_DEBUG', true );
 } else {
-	error_reporting( E_ALL ^ E_NOTICE );
+	error_reporting( E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED );
 }
 
 if ( !defined( 'WEBIMDB_DEBUG' ) )
