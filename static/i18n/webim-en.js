@@ -93,6 +93,9 @@ webim.ui.i18n.store('en',{
 	"question": "Question",        
 	"answer": "Answer",
 	"login": "Login",
+	"upload": "Upload",
+	"visitor":"Visitor",
+	"manager":"Manager",
 	"exit": "Exit"
 });
 
